@@ -4,10 +4,10 @@ import { connect } from 'react-redux';
 import { reduxForm } from 'redux-form';
 
 class SignUp extends Component {
-  // This component needs a `handleFormSubmit` function that takes in 
-  // username, password, comfirmPassword strings as input and 
-  // invokes the `register` action 
-  
+  // This component needs a `handleFormSubmit` function that takes in
+  // username, password, comfirmPassword strings as input and
+  // invokes the `register` action
+
   renderAlert = () => {
     if (!this.props.error) return null;
     return (
