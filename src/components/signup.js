@@ -33,13 +33,14 @@ class SignUp extends Component {
         </fieldset>
         <fieldset>
           <label>Password</label>
-          <Field name="password" component="input" type="text" />
+          <Field name="password" component="input" type="password" />
         </fieldset>
         <fieldset>
           <label>Confirm Password</label>
-          <Field name="confirmPassword" component="input" type="text" />
+          <Field name="confirmPassword" component="input" type="password" />
         </fieldset>
         <button action="submit">Sign Up</button>
+        {this.renderAlert()}
       </form>
     );
   }
