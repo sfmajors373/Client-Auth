@@ -9,7 +9,7 @@ export default (ComposedComponent) => {
       // If it isn't, then redirect the user back to the /signin page
       if (!(checkIfAuthenticated())) {
         this.props.authenticated = false;
-        this.props.history.push('/signin');
+        this.props.history.replace('/signin');
       }
     }
 
